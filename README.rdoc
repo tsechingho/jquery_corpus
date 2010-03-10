@@ -1,9 +1,33 @@
 = jquery_corpus
 
-Description goes here.
+Manage jQuery and it's plugins for Rails 3 applications.
+
+Rails and jQuery are both awesome framework for web developers. It's annoying to setup the groundwork manually, we require some handy scripts and rails 3 generators will help this quit easier. This gem will collect useful and popular jqeury plugins and provide a reliable way to manage it via rails 3 generator.
+
+== Requirements
+
+* Rubygem >= 1.3.6
+* Rails >= 3.0.0.beta
+
+== Installation
+
+Edit your Gemfile, and add:
+
+  gem 'jquery_corpus'
+
+Use bundler to install:
+
+  bundle install
+
+== Usage
+
+You can use `rails generate` to check the available generators under "jquery" namespace, and use them like:
+
+  rails generate jquery:ui 1.8rc3
+  rails generate jquery:colorbox
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

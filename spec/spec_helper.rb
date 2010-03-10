@@ -1,9 +1,14 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'jquery_corpus'
-require 'spec'
-require 'spec/autorun'
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+require 'rubygems'
+require 'rspec'
+require 'rspec/autorun'
 
-Spec::Runner.configure do |config|
-  
+require 'rails/generators'
+require 'jquery_corpus'
+
+Rspec.configure do |config|
+  config.mock_framework = :rspec
+  #config.include Rspec::Matchers
+  #config.mock_with :rspec
 end

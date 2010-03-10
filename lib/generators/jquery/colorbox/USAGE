@@ -1,0 +1,18 @@
+Description:
+  Install colorbox directly from internet (http://colorpowered.com/colorbox).
+  Or You could provide local zip file with --zip option like:
+
+    --zip=./colorbox.zip
+    --zip=/Users/foo/colorbox.zip
+    --zip=~/colorbox.zip
+
+  Please note that this zip file will NOT be deleted after installation.
+
+  ColorBox: A light-weight, customizable lightbox plugin for jQuery 1.3 and 1.4
+
+Example:
+  rails generate jquery:colorbox
+
+  This will create:
+    public/javascripts/jquery.colorbox.js
+

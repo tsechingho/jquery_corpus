@@ -1,0 +1,35 @@
+Description:
+  Install jquery-ui directly from internet (http://jqueryui.com/download).
+  Or You could provide customized jquery-ui zip file downloaded from
+  http://jqueryui.com/download with --zip option like:
+
+    --zip=./jquery-ui-version.custom.zip
+    --zip=/Users/foo/custom.zip
+    --zip=~/custom.zip
+
+  Please note that this zip file will NOT be deleted after installation.
+
+Example:
+  rails generate jquery:ui 1.8rc3
+
+  This will create:
+    app/views/layouts/application.html.erb
+    config/initializers/jquery.rb
+    public/javascripts/jquery.js
+    public/javascripts/jquery-ui.js
+    public/javascripts/rails.js
+    public/stylesheets/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png
+    public/stylesheets/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
+    public/stylesheets/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
+    public/stylesheets/smoothness/images/ui-bg_glass_65_ffffff_1x400.png
+    public/stylesheets/smoothness/images/ui-bg_glass_75_dadada_1x400.png
+    public/stylesheets/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+    public/stylesheets/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png
+    public/stylesheets/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+    public/stylesheets/smoothness/images/ui-icons_222222_256x240.png
+    public/stylesheets/smoothness/images/ui-icons_2e83ff_256x240.png
+    public/stylesheets/smoothness/images/ui-icons_454545_256x240.png
+    public/stylesheets/smoothness/images/ui-icons_888888_256x240.png
+    public/stylesheets/smoothness/images/ui-icons_cd0a0a_256x240.png
+    public/stylesheets/smoothness/jquery-ui.css
+

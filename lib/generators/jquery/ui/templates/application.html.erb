@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= Rails.application.class.name.split('::').first %>: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold', 'smoothness/jquery-ui' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<p class="notice"><%= notice %></p>
+
+<%- flash.each do |name, msg| -%>
+  <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+<%- end if flash -%>
+
+<% if user_signed_in? -%>
+  <div id="user_login_box" style="float:right">
+    <%= current_user.email %> |
+    <%= link_to 'My info', edit_user_registration_path %> |
+    <%= link_to 'Sign out', destroy_user_session_path %>
+  </div>
+<% end -%>
+
+<%= yield %>
+
+<%= javascript_include_tag :defaults %>
+</body>
+</html>
